@@ -1,0 +1,46 @@
+{
+  "name": "nicelizhi/airwallex-php-sdk",
+  "description": "Airwallex PHP SDK",
+  "type": "library",
+  "license": "MIT",
+  "version": "5.12.0",
+  "require": {
+    "php": "^7.2|^8.0",
+    "ext-json": "*",
+    "psr/http-client-implementation": "^1.0",
+    "psr/http-message-implementation": "^1.0",
+    "psr/http-factory-implementation": "^1.0",
+    "php-http/discovery": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0 || ^7.5",
+    "guzzlehttp/guzzle": "^7.0",
+    "http-interop/http-factory-guzzle": "^1.0",
+    "php-http/mock-client": "^1.3",
+    "fakerphp/faker": "^1.13",
+    "phpstan/phpstan": "^0.12.23",
+    "php-http/message": "^1.14",
+    "php-http/message-factory": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Nicelizhi\\AirwallexSdk\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Nicelizhi\\AirwallexSdk\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "php-http/discovery": false
+    }
+  },
+  "scripts": {
+    "phpcs": "@php vendor/bin/phpcs --standard=phpcs.ruleset.xml .",
+    "phpcbf": "@php vendor/bin/phpcbf --standard=phpcs.ruleset.xml .",
+    "phpunit": "@php vendor/bin/phpunit"
+  }
+}
