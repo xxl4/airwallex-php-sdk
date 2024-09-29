@@ -41,5 +41,6 @@
   },
   "scripts": {
     "phpunit": "@php vendor/bin/phpunit"
-  }
+  },
+  "minimum-stability": "stable"
 }
